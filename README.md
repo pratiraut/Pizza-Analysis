@@ -2,6 +2,8 @@
 
 This Data Analysis project leverages the data to enable the business to better understand themselves and their customers, leading to higher profits and better performances. By analyzing Key Metrics that the business use to measure performance, writing SQL queries to calculate these metrics, and producing report-ready results.
 
+Dataset [Downlode here]
+
 ## Problem statement 
 
 - KPI's
@@ -90,12 +92,22 @@ SELECT SUM(total_price) AS total_revenue
 FROM pizza_sales;
 ```
 
+Output -
+
+![Total_revenue](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/89def362-9405-44ea-982c-7bad7c970b76)
+
+
 Average Order Values - Average Order Value is the average amount spent per order
 
 ```sql
 SELECT SUM(total_price)/ COUNT(DISTINCT order_id) AS avg_order_values
 FROM pizza_sales;
 ```
+
+Output -
+
+![avgorva](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/97035db7-c25e-48e9-a3d1-71a32433620b)
+
 
 Total Pizza Sold - Total Pizzas Sold is the sum of the quantities of all pizzas sold
 
@@ -104,12 +116,22 @@ SELECT SUM(quantity) AS total_pizza_sold
 FROM pizza_sales;
 ```
 
+Output -
+
+![pizzasold](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/6b595fe0-d2a6-467e-9f56-d7210f84c3c3)
+
+
 Total Orders - Total Orders is the total number of orders placed
 
 ```sql
 SELECT COUNT(DISTINCT order_id) AS total_orders
 FROM pizza_sales;
 ```
+
+Output -
+
+![total orders](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/7fe4867a-3907-493c-b561-d32b54f0ef7a)
+
 
 Average Pizza per Orders
 
@@ -118,6 +140,11 @@ SELECT CAST(CAST(SUM(quantity)AS NUMERIC(10,2))
         /CAST(COUNT(DISTINCT order_id)AS NUMERIC (10,0))AS NUMERIC (10,2))
 FROM pizza_sales;
 ```
+
+Output -
+
+![avg pizza per order](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/226fd3e2-f2eb-4166-9cf6-4a65462e9ae2)
+
 
 ### SQL queries
 
@@ -132,6 +159,12 @@ FROM pizza_sales
 GROUP BY order_day;
 ```
 
+Output - 
+
+![daily trends](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/79d11fc1-801b-4d5f-9851-1bf6dfcd6f46) 
+
+In the given output table we can observe on which day of week the maximum orders placed.
+
 2. Monthly Trends for total orders.
 
 ```sql
@@ -142,6 +175,11 @@ GROUP BY month_orders
 ORDER BY total_orders DESC;
 ```
 
+Output -
+
+![monthly trends](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/57749dd6-80a8-45f1-868c-3e7c243f279a)
+
+
 3. Percentage of Sales by pizza category.
 
 ```sql
@@ -151,6 +189,11 @@ SELECT pizza_category,
 FROM pizza_sales
 GROUP BY pizza_category;
 ```
+
+Output-
+
+![category pizza](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/02acd471-7fea-423e-ae7d-31fbb255a3a5)
+
 
 4. Percentage of sales by pizza size.
 
@@ -163,6 +206,11 @@ GROUP BY pizza_size
 ORDER BY per_total_sales DESC;
 ```
 
+Output-
+
+![pizza size](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/a3722a46-a652-44d2-849d-cba1c4764931)
+
+
 5. TOP 5 Best seller by Revenue.
 
  ```sql
@@ -173,6 +221,11 @@ GROUP BY pizza_name
 ORDER BY total_revenue DESC
 LIMIT 5;
 ```
+
+Output -
+
+![Top 5](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/2fb97bd6-65f0-4738-801c-2e3b0504e42b)
+
 
 6. BOTTOM 5 Seller by Revenue.
 
@@ -185,3 +238,6 @@ ORDER BY total_revenue
 LIMIT 5;
 ```
 
+Output - 
+
+![Bottom 5](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/036c752e-33e6-4a6b-b5eb-85542fe04ac3)
