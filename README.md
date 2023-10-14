@@ -1,6 +1,6 @@
 ## Introduction
 
-This Data Analysis project leverages the data to enable businesses to better understand themselves and their customers, leading to higher profits and better performances. By analyzing Key Metrics that businesses use to measure performance, writing SQL queries to calculate these metrics, and producing report-ready results.
+This Data Analysis project leverages the data to enable the business to better understand themselves and their customers, leading to higher profits and better performances. By analyzing Key Metrics that the business use to measure performance, writing SQL queries to calculate these metrics, and producing report-ready results.
 
 ## Problem statement 
 
