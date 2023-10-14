@@ -25,8 +25,12 @@ Dataset [Downlode here]
 5. Vizavalization
 
 ### Getting a Data in Postgresql
+ I have data in the form of Spreadsheets but we have some limitations, Spreadsheets were originally designed for one user, and their characteristics reflect that. They’re great for a single user or a small number of users who don’t need to do a lot of incredibly complicated data manipulation. Databases, on the other hand, are designed to hold much larger collections of organized information—massive amounts, sometimes. Databases allow multiple users at the same time to quickly and securely access and query the data using highly complex logic and language That is why transferring  the data in the database.
+ 
+Data within the most common types of databases in operation today is typically modeled in rows and columns in a series of tables to make processing and data querying efficient. The data can then be easily accessed, managed, modified, updated, controlled, and organized. Most databases use structured query language (SQL) for writing and querying data.
 
-Creating A table name called pizza_sales. 
+ 
+- Creating A table name called pizza_sales. 
 
 ```sql
 CREATE TABLE IF NOT EXISTS pizza_sales
@@ -46,7 +50,7 @@ CREATE TABLE IF NOT EXISTS pizza_sales
 );
 ```
 
-Import data into the table pizza_sales.
+- Import data into the table pizza_sales.
 
 ```sql
 COPY pizza_sales( 
@@ -69,7 +73,7 @@ CSV HEADER;
 ```
 
 
-Understanding the data in the table
+- Understanding the data in the table
 
 ```sql
 SELECT * FROM pizza_sales;
@@ -77,7 +81,13 @@ SELECT * FROM pizza_sales;
 
 ### KPI'S Finding
 
-Key Performance Indicators - A Metric with some values that a company uses to measure its performances
+
+Key Performance Indicators - A Metric with some values that a company uses to measure its performance.
+
+A Key Performance Indicator (KPI) is a measurable target that indicates how individuals or businesses are performing in terms of meeting their goals. Reviewing and evaluating KPIs helps organizations determine whether or not they are on track for hitting their desired objectives.
+
+By looking at several key indicators, which may include categories such as revenue, and orders, businesses can identify successes, as well as what is not working. Analyzing KPIs on a regular basis provides a solid overview of how well a business is performing, which allows the folks in charge to decide if current operations should be continued, or if a change of strategy is needed.
+
 
 1. Total Revenue
 2. Average Order Values
@@ -85,7 +95,7 @@ Key Performance Indicators - A Metric with some values that a company uses to me
 4. Total Orders
 5. Average Pizza per Orders   
 
-Total Revenue - Total Revenue is the sum of the total price of all pizza orders
+Total Revenue - Total Revenue is the sum of the total price of all pizza orders.
 
 ```sql
 SELECT SUM(total_price) AS total_revenue
@@ -97,7 +107,7 @@ Output -
 ![Total_revenue](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/89def362-9405-44ea-982c-7bad7c970b76)
 
 
-Average Order Values - Average Order Value is the average amount spent per order
+Average Order Values - Average Order Value is the average amount spent per order.
 
 ```sql
 SELECT SUM(total_price)/ COUNT(DISTINCT order_id) AS avg_order_values
@@ -109,7 +119,7 @@ Output -
 ![avgorva](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/97035db7-c25e-48e9-a3d1-71a32433620b)
 
 
-Total Pizza Sold - Total Pizzas Sold is the sum of the quantities of all pizzas sold
+Total Pizza Sold - Total Pizzas Sold is the sum of the quantities of all pizzas sold.
 
 ```sql
 SELECT SUM(quantity) AS total_pizza_sold
@@ -121,7 +131,7 @@ Output -
 ![pizzasold](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/6b595fe0-d2a6-467e-9f56-d7210f84c3c3)
 
 
-Total Orders - Total Orders is the total number of orders placed
+Total Orders - Total Orders is the total number of orders placed.
 
 ```sql
 SELECT COUNT(DISTINCT order_id) AS total_orders
@@ -133,7 +143,7 @@ Output -
 ![total orders](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/7fe4867a-3907-493c-b561-d32b54f0ef7a)
 
 
-Average Pizza per Orders
+Average Pizza per Order.
 
 ```sql
 SELECT CAST(CAST(SUM(quantity)AS NUMERIC(10,2))
