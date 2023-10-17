@@ -253,7 +253,21 @@ Output -
 ![Bottom 5](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/036c752e-33e6-4a6b-b5eb-85542fe04ac3)
 
 
+### Power Query
 
+The Query Editor is an essential feature of Power BI that allows users to clean and transform data before loading it into the data model.
+
+Power Query Editor features used
+- Replacing Values
+- Filtering Rows
+- Add a Column
+- Create Custom Column
+
+  Power Query Editor window:
+
+  ![Power query editor window](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/76b86c3f-af35-4b48-8e9f-c8e09733357d)
+
+  By using the Query Editor, it easily cleans data and ensures that it is ready for analysis in Power BI.
 
 
 
