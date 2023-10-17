@@ -251,3 +251,13 @@ LIMIT 5;
 Output - 
 
 ![Bottom 5](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/036c752e-33e6-4a6b-b5eb-85542fe04ac3)
+
+
+
+
+
+
+
+### Dashboard 
+
+[downlode here]
