@@ -1,8 +1,10 @@
 ## Introduction
 
-This Data Analysis project leverages the data to enable the business to better understand themselves and their customers, leading to higher profits and better performances. By analyzing Key Metrics that the business use to measure performance, writing SQL queries to calculate these metrics, and producing report-ready results.
+This Data Analysis project leverages the data to enable the business to better understand themselves and their customers, leading to higher profits and better performances. By analyzing Key Metrics that the business uses to measure performance, writing SQL queries to calculate these metrics, and producing report-ready results.
 
-Dataset [Downlode here]
+Dataset : [downlode here](https://github.com/pratiraut/Pizza-Analysis/files/13033311/pizza_sales_excel_file.xlsx)
+ 
+  The primary dataset used for this analysis is the "pizza_sales_excel_file.xlsx" file, which contains details information about orders in the year 2015. 
 
 ## Problem statement 
 
@@ -284,3 +286,13 @@ Power Query Editor features used
 This dashboard contains information on Top and Bottom pizzas by Revenue, Quantity, and orders.
 
 Dashboard  : [downlode here](https://github.com/pratiraut/Pizza-Analysis/blob/main/Pizza%20Sales%20Reports.pbix)
+
+## Conclusion and Recommendation
+
+- 1935 Orders are placed in the month of July which is the highest in the year.
+- Weekends are the busiest days.
+- Customers preferred large-size pizza.
+- The Classic Category contributes 26.91% of total Sales.
+
+ 
+
