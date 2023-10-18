@@ -22,7 +22,7 @@ Dataset [Downlode here]
 2. KPI finding
 3. SQL queries
 4. Power Query
-5. Vizavalization
+5. Data Analysis and Visuals
 
 ### Getting a Data in Postgresql
  I have data in the form of Spreadsheets but we have some limitations, Spreadsheets were originally designed for one user, and their characteristics reflect that. They’re great for a single user or a small number of users who don’t need to do a lot of incredibly complicated data manipulation. Databases, on the other hand, are designed to hold much larger collections of organized information—massive amounts, sometimes. Databases allow multiple users at the same time to quickly and securely access and query the data using highly complex logic and language That is why transferring  the data in the database.
@@ -263,15 +263,24 @@ Power Query Editor features used
 - Add a Column
 - Create Custom Column
 
-  Power Query Editor window:
+    By using the Query Editor, it easily cleans data and ensures that it is ready for analysis in Power BI.
+
+  Power Query Editor :
 
   ![Power query editor window](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/76b86c3f-af35-4b48-8e9f-c8e09733357d)
 
-  By using the Query Editor, it easily cleans data and ensures that it is ready for analysis in Power BI.
+ 
+### Data Analysis and Visuals
 
+![pizza Sales report1](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/68a5375f-3263-4345-9298-3548fdbdb221)
 
+1. From the dashboard, it is observed that the Maximum Orders placed in the month of JULY is 1935.
+2. Orders are highest on weekends, Fridays, and Saturdays.
+3. Large-size pizza contributes to maximum sales.
+4. The classic category is most popular with customers.
 
+![Pizza Sales report2](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/cdfb4a55-371c-48e8-a59b-ab1f3b8dffdb)
 
-### Dashboard 
+This dashboard contains information on Top and Bottom pizzas by Revenue, Quantity, and orders.
 
-[downlode here](https://github.com/pratiraut/Pizza-Analysis/blob/main/Pizza%20Sales%20Reports.pbix)
+Dashboard  : [downlode here](https://github.com/pratiraut/Pizza-Analysis/blob/main/Pizza%20Sales%20Reports.pbix)
