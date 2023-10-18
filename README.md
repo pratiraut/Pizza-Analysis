@@ -274,6 +274,10 @@ Power Query Editor features used
  
 ### Data Analysis and Visuals
 
+Data  visualization plays an integral role in the decision-making process as it helps stakeholders understand trends, patterns, relationships, and outliners within data. By presenting data in an easily digestible format, decision-makers can grasp the implications of the information. leading to more informed choices and better outcomes.
+
+Furthermore, effective data visualization can foster collaboration and facilitate communication between team members by presenting in a universally understandable manner.
+
 ![pizza Sales report1](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/68a5375f-3263-4345-9298-3548fdbdb221)
 
 1. From the dashboard, it is observed that the Maximum Orders placed in the month of JULY is 1935.
