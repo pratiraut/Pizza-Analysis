@@ -293,6 +293,6 @@ Dashboard  : [downlode here](https://github.com/pratiraut/Pizza-Analysis/blob/ma
 - Weekends are the busiest days.
 - Customers preferred large-size pizza.
 - The Classic Category contributes 26.91% of total Sales.
-
+ 
  
 
