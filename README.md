@@ -13,7 +13,6 @@ Dataset : [downlode here](https://github.com/pratiraut/Pizza-Analysis/files/1303
 - Monthly Trends
 - Percentage of Sales
 - TOP 5 best seller
-- Unique Users
   
 ## Tools
 - PostgreSQL
