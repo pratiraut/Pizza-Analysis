@@ -6,6 +6,15 @@ Dataset : [downlode here](https://github.com/pratiraut/Pizza-Analysis/files/1303
  
   The primary dataset used for this analysis is the "pizza_sales_excel_file.xlsx" file, which contains details information about orders in the year 2015. 
 
+Learnings:
+1. Importing Data from SQL to Power BI
+2. Data Cleaning and Transformation using Power Query
+3. Data Modelling
+4. Using Tooltips
+5. Using Bookmarks
+6. Basic and Advanced DAX
+7. Finance Related Terms
+
 ## Problem statement 
 
 - KPI's
