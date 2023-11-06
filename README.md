@@ -15,6 +15,9 @@ Learnings:
 6. Basic and Advanced DAX
 7. Finance Related Terms
 
+![Screenshot (240)](https://github.com/pratiraut/Pizza-Analysis/assets/146583441/a79b99dd-0579-4a99-8fb6-c433e7e14b4b)
+
+
 ## Problem statement 
 
 - KPI's
